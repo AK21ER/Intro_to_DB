@@ -1,5 +1,5 @@
 weather = ["sunny","rainy","cold"]
-answer = input(f"What's the weather like today? ({weather[0]}/{weather[1]}/{weather[2]}) : ")
+answer = input(" What's the weather like today? (sunny/rainy/cold):")
 if answer == weather[0] :
     print("wear a t-shirt and sunglass")
 elif answer == weather[1] :
