@@ -1,20 +1,20 @@
-task = input("Enter your task: ")
-priority = input("Enter your priority (high, medium, low): ")
-timeBound = input("Is it time-bound? (yes/no): ") 
-if timeBound.lower() == "yes":
-    match priority.lower():
+Task = input("Enter your task: ")
+Priority = input("Enter your priority (high, medium, low): ")
+TimeBound = input("Is it time-bound? (yes/no): ") 
+if TimeBound.lower() == "yes":
+    match Priority.lower():
         case "high":
-         print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
+         print(f"Reminder: '{Task}' is a {Priority} priority task that requires immediate attention today!")
         case "medium":
-          print(f"Reminder: '{task}' is a {priority} priority task that requires attention today!")
+          print(f"Reminder: '{Task}' is a {Priority} priority task that requires attention today!")
         case "low":
-          print(f"Reminder: '{task}' is a {priority} priority task that can be done at")
-elif timeBound.lower() == "no":
+          print(f"Reminder: '{Task}' is a {Priority} priority task that can be done at")
+elif TimeBound.lower() == "no":
    match priority.lower():
       case "high":
-         print(f"Note: '{task}' is a {priority} task. that requires immediate attention!")
+         print(f"Note: '{Task}' is a {Priority} task. that requires immediate attention!")
       case "medium":
-         print(f"Note: '{task}' is a {priority} task. that requires attention!")
+         print(f"Note: '{Task}' is a {Priority} task. that requires attention!")
       case "low":
-          print (f"Note: '{task}' is a {priority} priority task. Consider completing it when you have free time.")
+          print (f"Note: '{Task}' is a {Priority} priority task. Consider completing it when you have free time.")
 else : print("Invalid input")
