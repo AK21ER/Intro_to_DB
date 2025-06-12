@@ -1,5 +1,5 @@
 
-def display_menu() :
+def display_menu():
     print("Shopping List Menu")
     print("1. Add Item")
     print("2. Remove Item")
