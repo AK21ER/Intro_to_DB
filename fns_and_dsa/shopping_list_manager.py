@@ -1,4 +1,4 @@
-shopping_list = []
+
 def display_menu() :
     print("Shopping List Menu")
     print("1. Add Item")
@@ -8,6 +8,7 @@ def display_menu() :
 
 
 def main():
+    shopping_list = []
     while True:
         display_menu()
         choice = input("Enter your choice: ")
